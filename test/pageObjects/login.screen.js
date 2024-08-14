@@ -5,7 +5,7 @@ export default class LoginScreen {
     get inpPassword() { return $('android=new UiSelector().className("android.widget.EditText").instance(1)')}
     get txtPassword() { return $('android=new UiSelector().resourceId("org.wikipedia.alpha:id/login_password_input")')}
     get btnEntrar() { return $('android=new UiSelector().resourceId("org.wikipedia.alpha:id/login_button")')}
-    get responseTxt() { return $('android=new UiSelector().text("O nome de utilizador ou a palavra-passe inseridos estão incorretos. Tente novamente, por favor.")')}
+    get responseTxt() { return $('android=new UiSelector().resourceId("org.wikipedia.alpha:id/snackbar_text")')}
 
     async clickBtnEntrarLogin(){
         await this.btnEntrarLogin.click()
@@ -34,9 +34,8 @@ export default class LoginScreen {
         await this.btnEntrar.click()
     }
 
-    async getResponseTxt(){
-        await this.responseTxt.waitForDisplayed({ timeout: 5000})
-        await this.responseTxt.getValue()
+    async getResponseTxt(){        
+        return await this.responseTxt.getText()
     }
 
 }

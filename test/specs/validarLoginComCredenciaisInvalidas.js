@@ -19,6 +19,6 @@ describe('Wikipedia', () =>{
         await login.setPassword("teste")
         await login.clickBtnEntrar()
         await login.getResponseTxt()
-        exxpect(await login.getResponseTxt()).toBe('O nome de utilizador ou a palavra-passe inseridos estão incorretos. Tente novamente, por favor.')
+        expect(await login.getResponseTxt()).toBe('O nome de utilizador ou a palavra-passe inseridos estão incorretos.\nTente novamente, por favor.')
     })
 })

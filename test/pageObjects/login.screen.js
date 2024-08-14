@@ -37,5 +37,4 @@ export default class LoginScreen {
     async getResponseTxt(){        
         return await this.responseTxt.getText()
     }
-
 }

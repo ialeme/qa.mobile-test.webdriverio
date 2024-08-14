@@ -8,12 +8,12 @@ export default class HomeScreen{
       await this.btnSearch.click()
     }
   
-    async setValueInpSearch(searchText) {
-      await this.inpSearch.setValue(searchText)
+    async setValueInpSearch() {
+      await this.inpSearch.setValue("Sport Club Corinthians Paulista")
     }
 
     async getSearchResult() {
-        await this.searchResult.getText()
+       return await this.searchResult.getText()
     }
 
     async clickBtnMore() {

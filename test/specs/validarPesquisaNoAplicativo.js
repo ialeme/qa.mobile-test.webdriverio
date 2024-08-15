@@ -1,5 +1,6 @@
-import HomeScreen from "../pageObjects/home.screen.js"
-import OnboardingScreen from "../pageObjects/onboarding.screen.js"
+
+import HomeScreen from "../page/home/home.screen.js"
+import OnboardingScreen from "../page/onboarding.screen.js"
 
 describe('Wikipedia', () =>{
     it('Validar pesquisa no aplicativo', async () => {

@@ -1,7 +1,8 @@
-import HomeScreen from "../pageObjects/home.screen.js"
-import LoginScreen from "../pageObjects/login.screen.js"
-import MoreScreen from "../pageObjects/more.screen.js"
-import OnboardingScreen from "../pageObjects/onboarding.screen.js"
+
+import HomeScreen from "../page/home/home.screen.js"
+import LoginScreen from "../page/login/login.screen.js/index.js"
+import MoreScreen from "../page/more.screen.js"
+import OnboardingScreen from "../page/onboarding.screen.js"
 
 describe('Wikipedia', () =>{
     it('Validar Login com credenciais invalidas', async () => {

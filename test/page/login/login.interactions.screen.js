@@ -1,4 +1,4 @@
-import LoginElementsScreen from "./login.elements.screen"
+import LoginElementsScreen from "./login.elements.screen.js"
 
 export default class LoginInteractionsScreen extends LoginElementsScreen {
     async clickBtnEntrarLogin(){

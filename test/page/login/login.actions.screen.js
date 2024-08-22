@@ -1,10 +1,10 @@
-import LoginInteractionsScreen from "./login.interactions.screen";
+import LoginInteractionsScreen from "./login.interactions.screen.js";
 
 export default class LoginActionsScreen extends LoginInteractionsScreen {
     async setLogin(){
-        // super.username()
-        super.setUsername()
-        // super.password()
-        super.setPassword()
+       await super.username()
+       await super.setUsername()
+       await super.password()
+       await super.setPassword()
     }
 }

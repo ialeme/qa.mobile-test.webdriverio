@@ -1,4 +1,4 @@
-import HomeInteractionsScreen from "./home.interactions.screen";
+import HomeInteractionsScreen from "./home.interactions.screen.js";
 
 export default class HomeActionsScreens extends HomeInteractionsScreen {
     async search(){

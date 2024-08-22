@@ -1,5 +1,4 @@
-import HomeActionsScreens from "./home.actions.screen";
-import HomeInteractionsScreen from "./home.interactions.screen";
+import HomeInteractionsScreen from "./home.interactions.screen.js"
 
 export default class HomeQuestionsScreen extends HomeInteractionsScreen {
 

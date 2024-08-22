@@ -1,8 +1,8 @@
-import HomoElementsScreen from "./home.elements.screen";
+import HomoElementsScreen from "./home.elements.screen.js";
 
 export default class HomeInteractionsScreen extends HomoElementsScreen {
     async clickBtnSearch() {
-        await this.btnSearch.click()
+        await super.btnSearch.click()
       }
     
       async setValueInpSearch() {

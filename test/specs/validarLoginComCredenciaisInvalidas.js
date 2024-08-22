@@ -17,7 +17,7 @@ describe('Wikipedia', () =>{
         await homescreen.clickBtnMore()
         await more.clickBtnLogin()
         await login.clickBtnEntrarLogin()
-        await loginEnter.setLogin
+        await loginEnter.setLogin()
         // await login.username()
         // await login.setUsername("teste")
         // // await login.password()
